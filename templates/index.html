@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/60dbca1bdf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../static/main.css">
+    
+        <title>Car website</title>
+    </head>
+<body>
+    
+        <section class="contact-form">
+            <div class="container">
+                <div class="form-wrapper">
+                    <form action="/y_predict" method ="POST" class="form">
+                        <h1 class="lg-heading text-black">Car Details</h1>
+                        <p class=text-gray>You can fill the car details below.</p>    
+                        <div class="form-group">
+                            <label for="acceleration">Acceleration</label>
+                            <input type="number" name="acceleration" id="acceleration" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="displacement">Displacement</label>
+                             <input type="number" name="displacement" id="displacement" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="cylinders">Cylinders</label>
+                            <input type="number" name="cylinders" id="cylinders" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight</label>
+                            <input type="number" name="weight" id="weight" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="modelyear">Model year</label>
+                            <input type="number" name="modelyear" id="modelyear" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="horsepower">Horsepower</label>
+                            <input type="number" name="horsepower" id="horsepower" required></br>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="origin">Origin</label>
+                            <input type="number" name="origin" id="origin" required></br>
+                            
+                        </div>
+
+                        <button type="submit" class="form-btn">Submit</button>
+                    </form>
+                </div>
+             </div>
+            <div class= "form output" style="color: green; font-size: 15px"> <a class="underlineHover" href="#">
+            <strong><center>{{ predicted_output }}</center></strong></a></div>
+            </section>
+            <footer class='footer'>
+           
+                <div class="social-media-links">
+                    <i class="fab fa-facebook 4a-4x"></i>
+                    <i class="fab fa-instagram 4a-4x"></i>
+                    <i class="fab fa-twitter 4a-4x"></i>
+                    </div>
+                    <p>Car Website &copy; 2022, All Right Reserved </p>
+                </footer>
+        
+    
+</body>
+</html>
